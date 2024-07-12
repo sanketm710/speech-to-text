@@ -1,0 +1,307 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.Gender {
+  width: 180px;
+  height: 40px;
+}
+.source-lang {
+  width: 180px;
+  height: 40px;
+}
+.custom-audio {
+  display: flex;
+
+  width: vw; /* Example: Make the audio player full width */
+  background-color: #fffcfc; /* Example: Change background color */
+  border: 1px solid #0c0c0c; /* Example: Add border */
+  border-radius: 25px; /* Example: Add border radius */
+  padding: 5px; /* Example: Add padding */
+  /* Add more styles as needed */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+div {
+  font-family: "Lato";
+}
+
+.main-container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  /* flex-wrap: wrap; */
+  /* width: 100vh; */
+}
+
+.cointainer {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* width: 100vw; */
+}
+
+.button-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.AudioRecorder {
+  justify-content: top;
+  display: top;
+  align-items: top;
+  flex-direction: top;
+}
+
+.blue {
+  background-color: black;
+  color: white;
+}
+
+.blue:hover {
+  background-color: #667ed4;
+}
+
+.nnav {
+  width: "fit-content";
+  height: "fit-content";
+}
+
+.nnav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 0.3s ease;
+  z-index: 1000;
+  font-family: "Lato";
+}
+
+.nnav.sticky {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nnav:hover {
+  background-color: #333;
+}
+
+.clearbutton {
+  font-size: px;
+  color: #3c3a3a;
+  font-weight: 400;
+  background: rgb(151, 151, 151);
+  box-sizing: none;
+  outline: 0;
+  text-decoration: none;
+}
+
+.sidelink {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  display: block;
+  margin: 8px;
+}
+
+.sidelink:hover {
+  background-color: #ddd;
+  color: #000;
+  border-radius: 8px;
+}
+
+.sidelink-active {
+  background-color: #d6dbf4;
+  color: #000;
+  border-radius: 8px;
+}
+
+.sidelink-brand {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+}
+
+.main {
+  padding-left: 20vw;
+  width: 95vw;
+}
+
+.sidebar-logo {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.offset {
+  scroll-margin-top: 100px;
+  margin-bottom: 160px;
+}
+
+.audio-control-container {
+  display: flex;
+  width: auto;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  width: 15vw;
+  background-color: #f3f4f6;
+  overflow-x: hidden;
+  transition: width 0.1s;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 10vh;
+  padding-top: 24px;
+  height: 100vh;
+}
+
+/* .sidebar:hover {
+  width: 200px;
+} */
+
+.footer {
+  margin-top: 30px;
+  padding: 5px;
+  background-color: white;
+  margin-left: 20px;
+  flex-wrap: wrap;
+}
+
+.line {
+  display: flex;
+}
+.font-title {
+  font-size: auto;
+}
+.font-sub {
+  font-size: auto;
+}
+
+@media screen and (max-width: 431px) {
+  .audio-control-container {
+    flex-direction: column;
+  }
+  .custom-audio {
+  display: flex;
+
+  width: 65vw; /* Example: Make the audio player full width */
+  background-color: #fffcfc; /* Example: Change background color */
+  border: 1px solid #0c0c0c; /* Example: Add border */
+  border-radius: 25px; /* Example: Add border radius */
+  padding: 5px; /* Example: Add padding */
+  /* Add more styles as needed */
+}
+
+  .line {
+    flex-wrap: wrap;
+  }
+  .font-title {
+    font-size: x-large;
+  }
+  .font-sub {
+    font-size: medium;
+  }
+
+  .sidebar-title {
+    display: none;
+  }
+
+  .sidebar {
+    width: 15vw;
+  }
+
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  .main {
+    padding-left: 20vw;
+  }
+}
+@media screen and (max-height: 431px) {
+  .audio-control-container {
+    flex-direction: column;
+  }
+
+  .line {
+    flex-wrap: wrap;
+  }
+  .font-title {
+    font-size: x-large;
+  }
+  .font-sub {
+    font-size: medium;
+  }
+
+  .sidebar-title {
+    display: none;
+  }
+
+  .sidebar {
+    width: 15vw;
+  }
+
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    /* justify-content: center; */
+  }
+
+  .main {
+    padding-left: 20vw;
+  }
+}
